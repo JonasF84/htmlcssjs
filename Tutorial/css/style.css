@@ -1,0 +1,20 @@
+body {
+    background-color: aquamarine;
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0% 0%;
+    
+}
+h3 {
+    font-family: sans-serif;
+    font-style: oblique;
+    font-weight: bolder;
+    font-size: 200%;
+    color: aqua;
+}
+p {
+    text-indent: 30px;
+    color: aqua;
+}
+    
