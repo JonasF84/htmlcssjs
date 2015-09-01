@@ -1,5 +1,5 @@
 body {
-    background-color: aquamarine;
+    background-color: #000000;
     background-image: url(../img/background.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -11,10 +11,50 @@ h3 {
     font-style: oblique;
     font-weight: bolder;
     font-size: 200%;
-    color: aqua;
+    color: whitesmoke;
+}
+
+h4 {
+    color: whitesmoke;
 }
 p {
     text-indent: 30px;
-    color: aqua;
+    color: whitesmoke;
 }
-    
+
+nav,
+nav ul,
+nav li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: sticky;
+}
+nav ul {
+    width: 10em;
+    padding: 0.8em;
+    background-color: #000000;
+    list-style-type: none;
+}
+nav a:focus,
+nav a:hover,
+nav a:active {
+    color: #242127;
+    background-color: #322F35;
+}
+nav a {
+    display: block;
+    padding: 0.4em;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    box-shadow: 0 5px 10px #1D1821 inset;
+    color: #1D1821;
+    background-color: #403B44;
+}
+
+#menu {
+    position: fixed;
+    top: 10%;
+    margin-top: -2.5em;
+}
