@@ -1,18 +1,20 @@
-@media (min-width: 1920px){
+/*@media (min-width: 1920px){
     .content {
         width: 1920px;
         margin: 0 auto;
     }
-}
+}*/
 body {
     background-color: #000000;
-    background-image: url(../img/background.png);
+    background-image: url(../img/background2.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
     background-position: top center;
     font-family: Arial, Verdana, sans-serif;
     
 }
+
 h3 {
     font-family: fantasy;
     font-style: oblique;
@@ -21,15 +23,16 @@ h3 {
     color: whitesmoke;
 }
 
-h4 {
-    font-family: monospace;
-    color: whitesmoke;
-}
 p {
     margin: 0;
+    margin-bottom: 5px;
     padding: 0;
     color: whitesmoke;
     line-height: 120%;
+}
+
+.dice {
+    margin-left: 36em;
 }
 
 .box {
@@ -37,6 +40,59 @@ p {
     padding: 0.6em;
     border-radius: 4px;
     box-shadow: 0 5px 10px #1D1821;
+    float: left;
+}
+
+.boxcontainer{
+    margin-left: 12em;
+}
+
+.textblock {
+    float: right;
+    text-align: center;
+    margin-left: 15%;
+}
+
+.picturediv {
+    margin-bottom: 2em;
+    margin-left: 2em;
+    width: 30%;
+}
+.picturediv img {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.characterview {
+    margin-left: 20%;
+}
+
+.characterview img {
+    box-shadow: 0 5px 10px #1D1821;
+    margin-right: 1em;
+    margin-top: 1em
+}
+
+.textandpicture {
+    width: auto;
+}
+.textandpicture img {
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+.menulogocontainer {
+    margin-bottom: 8em;
+}
+.menulogocontainer img {
+    margin-left: 36em;
+}
+
+#pictureright {
+    float: right;
 }
 
 nav,
@@ -46,54 +102,37 @@ nav li {
     padding: 0;
     border: 0;
 }
-nav ul {
-    width: 10em;
-    padding: 0.5em;
-    background-color: #000000;
-    list-style-type: none;
-}
-nav a:focus,
-nav a:hover,
-nav a:active {
-    color: #242127;
-    background-color: #322F35;
-}
-nav a {
-    display: block;
-    padding: 0.4em;
-    text-decoration: none;
-    font-family: monospace;
-    font-size: 150%;
-    font-weight: bold;
-    border-radius: 4px;
-    box-shadow: 0 5px 10px #1D1821 inset;
-    color: #1D1821;
-    background-color: #403B44;
-}
 
 #menu {
-    margin-top: -2.5em;
-    margin-bottom: 4em;
+  background: #333;
+  list-style: none;
+  margin-top: 2.5em;
+  margin-bottom: 4em;
+  margin-right: 4em;
+  padding: 0;
+  width: 12em;
+  float: left;
 }
-
-#story {
-    float: right;
-    text-align: center;
-    margin-left: 15%;
+#menu li {
+  font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-
-.picturediv {
-    margin-left: 12em;
-    width: 30%;
+#menu a {
+  background: #333;
+  border-bottom: 2px solid #393939;
+  color: #ccc;
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  font-weight: normal;
 }
-.picturediv img {
-    float: left;
-    margin-right: 10px;
-    margin-bottom: 5px;
-}
-
-
-
-.characterview {
-    margin-left: 20%;
+#menu a:hover {
+    background-image: url(../img/hover.gif);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-color: #E87404;
+    color: #fff;
+    padding-bottom: 8px;
 }
