@@ -59,6 +59,7 @@
 }
 iframe {
     margin: 0 auto;
+    display: block;
 }
 
 .boxcontainer{
@@ -113,10 +114,6 @@ p {
     padding: 0;
     color: whitesmoke;
     line-height: 120%;
-}
-
-.dice {
-    margin-left: 36em;
 }
 
 .box {
