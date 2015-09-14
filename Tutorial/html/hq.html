@@ -3,23 +3,42 @@
 <head>
     <title>Headquarter</title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="../css/slidebars.min.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
     <script language="javascript" type="text/javascript" src="../js/menu.js"></script>
 </head>
 
 
 <body>
-    <div class="content">
-        <h3>Headquarter</h3>
-        <script>createMenu();</script>
-        <div class="boxcontainer">
-            <div class="textandpicture box">
-                    <img src="../img/hq2.jpg" width="400" height="266"/>
-                    <p>
-                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis                     natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. . Phasellus                      viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur                      ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam                     semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id,                      lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante.               Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis                  magna. Sed consequat, leo eget bibendum sodales, augue velit
-                    </p>
+    <div id="sb-site">
+        <div class="content">
+            <a href="" class="sb-toggle-left navbar-left burgerbutton"></a>
+            <h3>Headquarter</h3>
+            <div class="menudiv">
+                <script>createMenu();</script>
+            </div>
+            <div class="boxcontainer">
+                <div class="textandpicture box col span_3_of_3">
+                        <img src="../img/hq2.jpg" width="400"/>
+                        <p>
+                           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis                     natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. . Phasellus                      viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur                      ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam                     semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id,                      lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante.               Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis                  magna. Sed consequat, leo eget bibendum sodales, augue velit
+                        </p>
+                </div>
             </div>
         </div>
     </div>
+    <div class="sb-slidebar sb-left sb-style-push" data-sb-width="192px">
+        <script>createSideMenu();</script>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../js/slidebars.min.js"></script>
+    <script>
+      (function($) {
+        $(document).ready(function() {
+          $.slidebars();
+        });
+      }) (jQuery);
+    </script>
 </body>
 </html>

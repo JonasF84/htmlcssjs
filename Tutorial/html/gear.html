@@ -3,39 +3,58 @@
 <head>
     <title>Gear</title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="../css/slidebars.min.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
     <script language="javascript" type="text/javascript" src="../js/menu.js"></script>    
 </head>
 <body>
-    <div class="content">
-        <h3>Gear</h3>
-        <script>createMenu();</script>
-        <div class="boxcontainer">
-            <div class="picturediv box">
-                <img src="../img/rotordrone.jpg" width="200" height="133"/>
-                <p>
-                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis                     natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-                </p>
+    <div id="sb-site">
+        <div class="content">
+            <a href="" class="sb-toggle-left navbar-left burgerbutton"></a>
+            <h3>Gear</h3>
+            <div class="menudiv">
+                <script>createMenu();</script>
             </div>
-            <div class="picturediv box">
-                <img src="../img/cyberarm.jpg" width="200" height="133"/>
-                <p>
-                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis                     natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-                </p>
-            </div>
-            <div class="picturediv box">
-                <img src="../img/guns.jpg" width="200" height="133"/>
-                <p>
-                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis                     natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-                </p>
-            </div>
-            <div class="picturediv box">
-                <img src="../img/drone.png" width="200" height="133"/>
-                <p>
-                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis                     natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-                </p>
+            <div class="boxcontainer">
+                <div class="picturediv box box col span_2_of_3">
+                    <img src="../img/rotordrone.jpg" width="200"/>
+                    <p>
+                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis                     natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                    </p>
+                </div>
+                <div class="picturediv box col span_2_of_3">
+                    <img src="../img/cyberarm.jpg" width="200"/>
+                    <p>
+                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis                     natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                    </p>
+                </div>
+                <div class="picturediv box box col span_2_of_3">
+                    <img src="../img/guns.jpg" width="200"/>
+                    <p>
+                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis                     natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                    </p>
+                </div>
+                <div class="picturediv box box col span_2_of_3">
+                    <img src="../img/drone.png" width="200"/>
+                    <p>
+                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis                     natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                    </p>
+                </div>
             </div>
         </div>
-    </div>    
+    </div>
+    <div class="sb-slidebar sb-left sb-style-push" data-sb-width="192px">
+        <script>createSideMenu();</script>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../js/slidebars.min.js"></script>
+    <script>
+      (function($) {
+        $(document).ready(function() {
+          $.slidebars();
+        });
+      }) (jQuery);
+    </script>    
 </body>
 </html>

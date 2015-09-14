@@ -1,36 +1,54 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <title>Characters</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="../css/slidebars.min.css">
         <link rel="stylesheet" type="text/css" href="../css/style.css" />
         <link href="../css/lightbox.css" rel="stylesheet">
         <script language="javascript" type="text/javascript" src="../js/script.js"></script>
         <script language="javascript" type="text/javascript" src="../js/menu.js"></script> 
     </head>
     <body>
-        <div class="content">
-            <h3>Characters</h3>
-            <script>createMenu();</script>
-            <div class="characterview">
-                <a href="../img/gaichu.jpg" data-lightbox="characters" data-title="Gaichu">
-                <img src="../img/gaichu_tn.jpg" width="400" height="266" />
-                </a>
-                <a href="../img/gobbet.jpg" data-lightbox="characters" data-title="Gobbet">
-                <img src="../img/gobbet_tn.jpg" width="400" height="266" />
-                </a>
-                <a href="../img/isobel.png" data-lightbox="characters" title="Is0bel">
-                <img src="../img/isobel_tn.png" width="400" height="266" />
-                </a>
+        <div id="sb-site">
+            <div class="content">
+                <a href="" class="sb-toggle-left navbar-left burgerbutton"></a>
+                <h3>Characters</h3>
+                <div class="menudiv">
+                    <script>createMenu();</script>
+                </div>
+                <div class="characterview">
+                    <a href="../img/gaichu.jpg" data-lightbox="characters" data-title="Gaichu">
+                    <img src="../img/gaichu_tn.jpg" width="400" height="266" />
+                    </a>
+                    <a href="../img/gobbet.jpg" data-lightbox="characters" data-title="Gobbet">
+                    <img src="../img/gobbet_tn.jpg" width="400" height="266" />
+                    </a>
+                    <a href="../img/isobel.png" data-lightbox="characters" title="Is0bel">
+                    <img src="../img/isobel_tn.png" width="400" height="266" />
+                    </a>
+                </div>
             </div>
         </div>
         <script src="../js/lightbox-plus-jquery.min.js"></script>
         <script>
             lightbox.option({
-            wrapAround: true
-            
+            wrapAround: true     
             });
         </script>
+        <div class="sb-slidebar sb-left sb-style-push" data-sb-width="192px">
+        <script>createSideMenu();</script>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../js/slidebars.min.js"></script>
+    <script>
+      (function($) {
+        $(document).ready(function() {
+          $.slidebars();
+        });
+      }) (jQuery);
+    </script>
     </body>
     
 </html>
