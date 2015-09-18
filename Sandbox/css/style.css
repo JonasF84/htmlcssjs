@@ -1,0 +1,27 @@
+p {
+    color: black;
+}
+
+
+.colortext {
+    color: #652770;
+}
+
+.texthover {
+    color: cyan;
+    font-size: 200%;
+}
+
+.revealer {
+    border-style: solid;
+    border-width: 1px;
+    background-color: cadetblue;
+}
+
+.inputcolors {
+    background-color: aquamarine;
+}
+
+.inputerror {
+    border: 2px solid red;
+}
