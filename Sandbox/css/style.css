@@ -25,3 +25,7 @@ p {
 .inputerror {
     border: 2px solid red;
 }
+
+.valid {
+    background-color: aquamarine;
+}

@@ -44,7 +44,7 @@ $(document).ready(function () {
     
     $("<button type =\"submit\">Absenden</button>").appendTo("#form");
     
-    $(":submit").click(function(e) {
+  /*  $(":submit").click(function(e) {
         console.log("klick");
         $(":text").each(function() {
             console.log("text")
@@ -73,5 +73,30 @@ $(document).ready(function () {
     $(":radio[name=buttonradio]").change(function() {
         console.log($(this).val());
     
+    }); */
+    
+    $("#signup form").validate({
+        rules: {
+            name: {
+                required: true
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            website: {
+                url: true
+            },
+            password: {
+                minlength: 8,
+                required: true
+            },
+            passconf: {
+                equalTo: "#password"
+            }
+        },
+        success: function(label) {
+            label.text("OK!").addClass("valid");
+        }
     });
 }); 
